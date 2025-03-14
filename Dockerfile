@@ -1,7 +1,7 @@
 FROM node:18-alpine
 
 ENV NODE_ENV=production
-ARG NPM_BUILD="npm install --omit=dev"
+ARG NPM_BUILD="npm install ./Ultraviolet-Static --omit=dev"
 EXPOSE 8080/tcp
 
 LABEL maintainer="TitaniumNetwork Ultraviolet Team"
